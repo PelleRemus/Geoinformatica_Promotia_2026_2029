@@ -27,7 +27,7 @@ Console.WriteLine(23);
 Console.WriteLine(2 * 5 + 6 / 3 - 1);
 
 // Putem folosi si paranteze pentru a schimba ordinea operatiilor. Daca avem doua seturi de paranteze una in alta,
-// nu trecem de la paranteze rotunde "()" la paranteze drepte "[]". Se folosesc doar parantee rotunde "()"
+// nu trecem de la paranteze rotunde "()" la paranteze drepte "[]". Se folosesc doar paranteze rotunde "()"
 Console.WriteLine(2 * ((5 + 6) / (3 - 1)));
 
 // Pentru a avea si numere cu virgula, trebuie doar sa scriem, de exemplu "5.0", pentru a-i spune codului
@@ -43,10 +43,10 @@ string nume;
 // Pentru a da valoare unei variabile, folosim numele acesteia, urmat de "=", si apoi de valoarea pe care vrem sa i-o atribuim
 nume = "Remus";
 
-// Pentru afisare, putem scrie direct numele variabilei, fara a fi intre ghilimele
+// Pentru afisare, trebuie sa scrie direct numele variabilei, fara a fi intre ghilimele
 Console.WriteLine(nume);
 
-// Se pot face operatii si cu tet. Cea mai utila / folosita la inceput este operatia de Concatenare,
+// Se pot face operatii si cu text. Cea mai utila / folosita la inceput este operatia de Concatenare,
 // care este practic alipire. In cod este doar un "+" intre doua valori text.
 // Ex: "Hello " + "World" = "Hello World"
 // Ex: "5" + "6" = "56"
