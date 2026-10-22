@@ -134,3 +134,52 @@ else
 {
     Console.WriteLine($"Numele introdus este scurt! Are doar {nume.Length} litere");
 }
+
+// Exercitiu: Gasiti maximul dintre 3 numere
+int a, b, c;
+a = int.Parse(Console.ReadLine());
+b = int.Parse(Console.ReadLine());
+c = int.Parse(Console.ReadLine());
+
+// Versiunea 1
+if (a > b)
+{
+    if (a > c)
+    {
+        Console.WriteLine($"Maximul este a: {a}");
+    }
+    else
+    {
+        Console.WriteLine($"Maximul este c: {c}");
+    }
+}
+// exista si instructiunea "else if", in care stim ca conditiile dinainte sunt false,
+// si mai putem pune inca o conditie. Se pot folosi cate "else if" dorim, una dupa alta,
+// dar neaparat incepand cu un if, si nu dupa un else
+else if (b > c)
+{
+    Console.WriteLine($"Maximul este b: {b}");
+}
+else
+{
+    Console.WriteLine($"Maximul este c: {c}");
+}
+
+// Versiunea 2
+// Pe langa Console, putem folosi si "Math", in care exista functia Max(), care primeste 2 numere
+Console.WriteLine(Math.Max(12, 16));
+// Facem maximul dinte a si b, si rezultatul il punem in alta functie de maxim, impreuna cu c
+Console.WriteLine(Math.Max(Math.Max(a, b), c));
+
+// Versiunea 3: inca o variabila
+int max = a;
+// Verificam daca fiecare dintre variabile este mai mare decat max (inseamna ca nu era defapt maxim), si il schimbam
+if (b > max)
+{
+    max = b;
+}
+if (c > max)
+{
+    max = c;
+}
+Console.WriteLine($"Maximul este: {max}");
